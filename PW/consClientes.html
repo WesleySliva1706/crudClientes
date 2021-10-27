@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <script src="cordova.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/consulta.js"></script>
+
+    <title>Consulta de Clientes</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="top" align="center">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12 h-100">
+                <a class="navbar-brand">Consulta de Clientes</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Cadastrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="consClientes.html">Consultar</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="card mb-3 col-12">
+                <div class="card-body">
+                    <h5 class="card-title">Consultar - Contatos Agendados</h5>
+                    <table class="table table-hover col-12">
+                        <thead class=" table active bg-primary thead-dark">
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Telefone</th>
+                                <th scope="col">Origem</th>
+                                <th scope="col">Contato</th>
+                                <th scope="col">Observação</th>
+                                <th scope="col">Ações</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Wesley</td>
+                            <td>40028922</td>
+                            <td>Celular</td>
+                            <td>2021-06-02</td>
+                            <td>É o funk do ornitorrinco, que vai dar PS5</td>
+                            <td>
+                                <a class="a" onclick="alert('Editar');">Editar</a> |
+                                <a class="a" onclick="alert('Excluir');">Excluir</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fulano</td>
+                            <td>11912345678</td>
+                            <td>Facebook</td>
+                            <td>2021-04-17</td>
+                            <td>Falou com o Citrano</td>
+                            <td>
+                                <a class="a" onclick="alert('Editar');">Editar</a> |
+                                <a class="a" onclick="alert('Excluir');">Excluir</a>
+                            </td>
+                        </tr>
+                        <thead id="TableData"></thead>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
